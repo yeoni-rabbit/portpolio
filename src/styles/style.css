@@ -1,6 +1,9 @@
 img{
   width: 100%;
 }
+p{
+  color: #939393;
+}
 .section01 {
   position: relative;
   background-color: #080414;
@@ -48,19 +51,25 @@ img{
   }
 
 .title{
-  position: relative;
-  gap: 100px;
-  
-
+  /* position: relative; */
 
   .titleGroup{
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%; */
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
     
 
   }
 
   .press{
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,33 +89,59 @@ img{
   .decoGroup{
     position: relative;
     display: flex;
+    height: 100vh;
+
+    
     
     .deco01{
-      width: 20vw;
+      width: 17vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
     }
 
     .deco02{
-      width: 15vw;
+      width: 11vw;
+      position: absolute;
+      left: 13%;
+      bottom: 5%;
     }
 
     .deco03{
       width: 13vw;
+      position: absolute;
+      top: 0;
+      left: 30%;
     }
 
     .deco04{
-      width: 18vw;
+      width: 14vw;
+      position: absolute;
+      bottom: 15%;
+      left: 40%;
     }
 
     .deco05{
       width: 13vw;
+      position: absolute;
+      top: 10%;
+      right: 30%;
     }
 
     .deco06{
-      width: 30vw;
+      width: 25vw;
+      position: absolute;
+      bottom: -20%;
+      right: 10%;
+      
     }
 
     .deco07{
-      width: 18vw;
+      width: 15vw;
+      position: absolute;
+      bottom: 30%;
+      right: 0;
     }
 
 
@@ -119,8 +154,73 @@ img{
 }
 
 
-/* 
+
 .section02{
+  height: 2500px;
+  position: relative;
+  background-color: #2F2D33;
+  
+  .overviewContent{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+
+/* 챗지피티 */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 100vh; /* Makes the div take the full viewport height */
+    text-align: center; /* Centers text inside */
 
 
-} */
+
+
+    .header_tag{
+      color: #A27CFF;
+      background-color: #fff;
+      margin-bottom: 48px;
+    }
+
+    .section02_title{
+      font-weight: bold;
+      font-size: 54px;
+      margin-bottom: 32px;
+
+
+      .title_tag{
+        background: #6728FF;
+        }
+
+    }
+    .white_tag{
+      color: #ffffff;
+    }
+
+
+
+  }
+
+
+
+}
+
+
+.overviewDeco{
+  position: relative;
+  
+  .overDeco_circle{
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+}
