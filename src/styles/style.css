@@ -4,6 +4,8 @@ img{
 p{
   color: #939393;
 }
+
+
 .section01 {
   position: relative;
   background-color: #080414;
@@ -51,13 +53,12 @@ p{
   }
 
 .title{
-  /* position: relative; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
 
   .titleGroup{
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%; */
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
@@ -66,10 +67,6 @@ p{
   }
 
   .press{
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +84,6 @@ p{
 
 
   .decoGroup{
-    position: relative;
     display: flex;
     height: 100vh;
 
@@ -156,71 +152,228 @@ p{
 
 
 .section02{
-  height: 2500px;
+  height: 2300px;
   position: relative;
   background-color: #2F2D33;
-  
-  .overviewContent{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
+
+  .overview{
     
-    /* justify-content: center; */
-    /* align-items: center; */
-
-/* 챗지피티 */
-    display: flex; /* Enables flexbox */
-    flex-direction: column; /* Aligns items in a column */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    height: 100vh; /* Makes the div take the full viewport height */
-    text-align: center; /* Centers text inside */
+    width: 100vw;
+    height: 1203px;
+    position: absolute;
+    left: 0;
+    top: 140px;
 
 
-
-
-    .header_tag{
-      color: #A27CFF;
-      background-color: #fff;
-      margin-bottom: 48px;
+    .overviewContent{
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      translate: -50% -50%;
+    
+  
+  /* 챗지피티 */
+      display: flex; /* Enables flexbox */
+      flex-direction: column; /* Aligns items in a column */
+      justify-content: center; /* Centers content vertically */
+      align-items: center; /* Centers content horizontally */
+      /* height: 100vh; Makes the div take the full viewport height */
+      text-align: center; /* Centers text inside */
+  
+  
+  
+  
+      .header_tag{
+        color: #A27CFF;
+        background-color: #fff;
+        margin-bottom: 48px;
+      }
+  
+      .section02_title{
+        font-weight: bold;
+        font-size: 54px;
+        margin-bottom: 32px;
+  
+  
+        .title_tag{
+          background: #6728FF;
+          }
+  
+      }
+      .white_tag{
+        color: #ffffff;
+      }
+  
+  
+  
     }
 
-    .section02_title{
-      font-weight: bold;
-      font-size: 54px;
-      margin-bottom: 32px;
-
-
-      .title_tag{
-        background: #6728FF;
+    .overviewDeco{
+      /* display: flex; */
+    
+      
+      
+      .overDeco_circle{
+        /* display: flex;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        translate: -50% -50%; */
+        
+    
+        .circle_01{
+          position: absolute;
+          left: 50%;
+          top: 10%;
+          translate: -50% -50%;
         }
-
+        .circle_02{
+          position: absolute;
+          left: 50%;
+          top: 10%;
+          translate: -50% -50%;
+        }
+        .circle_03{
+          position: absolute;
+          left: 50%;
+          top: 10%;
+          translate: -50% -50%;
+        }
+      }
+    
+      .overDeco_icon{
+        
+    
+        .over_icon01{
+          width: 5vw;
+          position: absolute;
+          left: 70%;
+          top: 20%;
+          translate: -50% -50%;
+        }
+        .over_icon02{
+          width: 10vw;
+          position: absolute;
+          left: 20%;
+          top: 50%;
+          translate: -50% -50%;
+        }
+        .over_icon03{
+          width: 15vw;
+          position: absolute;
+          left: 20%;
+          top: 70%;
+          translate: -50% -50%;
+        }
+    
+      }
     }
-    .white_tag{
-      color: #ffffff;
+    
+    .overDeco_eyes{
+      display: flex;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      gap: 24px;
+      margin-top: 40px;
+      
+      .ov_eyes_left{
+        width: 15vw;
+      }
+    
+      .ov_eyes_right{
+        width: 15vw;
+      }
+    }
+  }
+  .background{
+    position: absolute;
+    top: 1288px;
+    left: 0;
+    width: 100vw;
+
+    .background_title01{
+      width: 8vw;
+      margin-bottom: 24px;
+      margin-left: 150px;
+      
     }
 
+    .title02{
+      font-weight: bold;
+      font-size: 48px;
+      margin-bottom: 40px;
+      margin-left: 150px;
+    }
 
+    .chart{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+
+      /* .chart01{
+        width: 25%;
+      }
+      .chart02{
+        width: 25%;
+      }
+      .chart03{
+        width: 25%;
+      } */
+    }
 
   }
+} 
+
+.section03{
+  height: 1793px;
 
 
 
+  .reason {
+    width: 800px;
+    height: 282px; /* 카드 너비 */
+    background-color: #0E0E17; /* 어두운 배경 */
+    border: 2px solid #2663FF; /* 파란색 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    color: white; /* 기본 텍스트 색상 */
+    align-items: center;
+    /* font-family: 'Arial', sans-serif; */
+}
+
+/* REASON 1 뱃지 스타일 */
+.badge {
+    display: inline-block;
+    background-color: #6C4DFF; /* 보라색 배경 */
+    color: white;
+    padding: 6px 14px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reason01{
+
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+}
+/* 제목 스타일 */
+.reason_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* 설명 스타일 */
+.description {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5); /* 연한 회색 텍스트 */
+    margin-top: 8px;
+    line-height: 1.5;
 }
 
 
-.overviewDeco{
-  position: relative;
-  
-  .overDeco_circle{
-    display: flex;
-    position: absolute;
-    left: 0%;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    
-  }
 
 }
