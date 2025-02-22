@@ -1,26 +1,29 @@
-img{
-  width: 100%;
-}
-p{
+p {
   color: #939393;
   line-height: 150%;
   font-size: 22px;
 }
 
-
 .section01 {
   position: relative;
   background-color: #080414;
 
-  .bgimg{
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-  
+  img {
+    width: 100%;
   }
 
-  .nav{
+  .bgimg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: 10;
+  }
+
+  .nav {
     display: flex;
     position: absolute;
     left: 0;
@@ -28,11 +31,10 @@ p{
     justify-content: space-between;
     padding: 40px 60px;
 
-    
     /* background-color: orange; */
   }
 
-  .introduce{
+  .introduce {
     /* width: 100%;
     height: 100px; */
     display: flex;
@@ -43,245 +45,210 @@ p{
     padding: 40px 60px;
     justify-content: space-between;
     align-items: center;
-    
-
 
     /* background-color: dodgerblue; */
 
-    ul{
-    padding: 4px;
-
+    ul {
+      padding: 4px;
     }
   }
 
-.title{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
 
-  .titleGroup{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-    
+    .titleGroup {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
 
-  }
+    .press {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
 
-  .press{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
-
-    .press_but{
-      width: 1vw;
+      .press_but {
+        width: 1vw;
+      }
     }
   }
 
-
-}
-
-
-
-  .decoGroup{
+  .decoGroup {
     display: flex;
     height: 100vh;
 
-    
-    
-    .deco01{
+    .deco01 {
       width: 17vw;
       position: absolute;
       top: 0;
       left: 0;
-      
     }
 
-    .deco02{
+    .deco02 {
       width: 11vw;
       position: absolute;
       left: 13%;
       bottom: 5%;
     }
 
-    .deco03{
+    .deco03 {
       width: 13vw;
       position: absolute;
       top: 0;
       left: 30%;
     }
 
-    .deco04{
+    .deco04 {
       width: 14vw;
       position: absolute;
       bottom: 15%;
       left: 40%;
     }
 
-    .deco05{
+    .deco05 {
       width: 13vw;
       position: absolute;
       top: 10%;
       right: 30%;
     }
 
-    .deco06{
+    .deco06 {
       width: 25vw;
       position: absolute;
       bottom: -20%;
       right: 10%;
-      
     }
 
-    .deco07{
+    .deco07 {
       width: 15vw;
       position: absolute;
       bottom: 30%;
       right: 0;
     }
-
-
-
-
-
   }
-
-  
 }
 
-
-
-.section02{
+.section02 {
   height: 2300px;
   position: relative;
-  background-color: #2F2D33;
-  
+  background-color: #2f2d33;
 
-
-  .overview{
-    
+  .overview {
     width: 100vw;
     height: 1203px;
-    position: absolute;
-    left: 0;
-    top: 140px;
+    margin-top: 140px;
 
+    img {
+      width: initial;
+    }
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 140px; */
 
-    .overviewContent{
+    .overviewContent {
       position: absolute;
       left: 50%;
       top: 15%;
       translate: -50% -50%;
-    
-  
-  /* 챗지피티 */
+
+      /* 챗지피티 */
       display: flex; /* Enables flexbox */
       flex-direction: column; /* Aligns items in a column */
       justify-content: center; /* Centers content vertically */
       align-items: center; /* Centers content horizontally */
       /* height: 100vh; Makes the div take the full viewport height */
       text-align: center; /* Centers text inside */
-  
-  
-  
-  
-      .header_tag{
-        color: #A27CFF;
+
+      .header_tag {
+        color: #a27cff;
         /* background-color: #fff; */
         margin-bottom: 48px;
         font-size: 26px;
         font-weight: bold;
       }
-  
-      .section02_title{
+
+      .section02_title {
         font-weight: bold;
         font-size: 54px;
         margin-bottom: 32px;
 
-
-  
-  
-      .title_tag{
-        background: #6728FF;
+        .title_tag {
+          background: #6728ff;
         }
-      
-      .title_text{
-        font-size: 26px;
+
+        .title_text {
+          font-size: 26px;
+        }
       }
-  
-      }
-      .white_tag{
+      .white_tag {
         color: #ffffff;
       }
-  
-  
-  
     }
 
-    .overviewDeco{
+    .overviewDeco {
       /* display: flex; */
-    
-      
-      
-      .overDeco_circle{
+
+      .overDeco_circle {
+        width: 960px;
+        height: 960px;
+        /* background-color: red; */
+        position: absolute;
+        left: 50%;
+        top: 6%;
+        translate: -50% 0;
+
         /* display: flex;
         position: absolute;
         left: 50%;
         top: 15%;
         translate: -50% -50%; */
-        
-    
-        .circle_01{
+
+        .circle_01 {
           position: absolute;
           left: 50%;
-          top: 10%;
+          top: 50%;
           translate: -50% -50%;
         }
-        .circle_02{
+        .circle_02 {
           position: absolute;
           left: 50%;
-          top: 10%;
+          top: 50%;
           translate: -50% -50%;
         }
-        .circle_03{
-          position: absolute;
-          left: 50%;
-          top: 10%;
-          translate: -50% -50%;
+        .circle_03 {
         }
       }
-    
-      .overDeco_icon{
-        
-    
-        .over_icon01{
+
+      .overDeco_icon {
+        .over_icon01 {
           width: 5vw;
           position: absolute;
           left: 70%;
           top: 20%;
           translate: -50% -50%;
         }
-        .over_icon02{
+        .over_icon02 {
           width: 10vw;
           position: absolute;
           left: 20%;
           top: 50%;
           translate: -50% -50%;
         }
-        .over_icon03{
+        .over_icon03 {
           width: 15vw;
           position: absolute;
           left: 20%;
           top: 70%;
           translate: -50% -50%;
         }
-    
       }
     }
-    
-    .overDeco_eyes{
+
+    .overDeco_eyes {
       display: flex;
       position: absolute;
       left: 50%;
@@ -289,38 +256,41 @@ p{
       translate: -50% -50%;
       gap: 24px;
       margin-top: 40px;
-      
-      .ov_eyes_left{
+
+      .ov_eyes_left {
         width: 15vw;
       }
-    
-      .ov_eyes_right{
+
+      .ov_eyes_right {
         width: 15vw;
       }
     }
   }
-  .background{
-    position: absolute;
+  .background {
+    margin: 0 auto;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
     top: 1288px;
-    left: 0;
-    width: 100vw;
-    margin-inline: 150px;
+    left: 0; */
+    width: 1600px;
+    /* margin-inline: 150px; */
 
-    .background_title01{
+    .background_title01 {
       width: 8vw;
       margin-bottom: 24px;
       /* margin-left: 150px; */
-      
     }
 
-    .title02{
+    .title02 {
       font-weight: bold;
       font-size: 48px;
       margin-bottom: 40px;
       /* margin-left: 150px; */
     }
 
-    .chart{
+    .chart {
       display: flex;
       justify-content: center;
       gap: 16px;
@@ -335,145 +305,130 @@ p{
         width: 25%;
       } */
     }
-
   }
-} 
+}
 
-.section03{
+.section03 {
   height: 1851px;
   background-color: #000000;
   position: relative;
-  
 
-.deskreaserch{
-  /* position: absolute;
+  .deskreaserch {
+    /* position: absolute;
   left: 50%;
   top: 50%;
   translate: -50% -50%; */
-  margin-top: 120px;
-  margin-inline: 150px;
-}
-
-  .title01{
-    color: #6728FF;
-    margin-bottom: 24px;
-   
+    margin-top: 120px;
+    margin-inline: 150px;
   }
-  .title02{
+
+  .title01 {
+    color: #6728ff;
+    margin-bottom: 24px;
+  }
+  .title02 {
     font-weight: bold;
     font-size: 54px;
     margin-bottom: 32px;
-    
-
   }
-  .smallHeader{
+  .smallHeader {
     margin-bottom: 36px;
-    .gray_badge{
+    .gray_badge {
       display: inline-block;
-      background-color: #1F2126; 
+      background-color: #1f2126;
       color: 868686;
       padding: 2px 6px;
       border-radius: 2px;
       font-size: 20px;
       font-weight: bold;
-    /* margin-bottom: 24px; */
-    
+      /* margin-bottom: 24px; */
     }
-    
   }
 
-  .reason{
+  .reason {
     display: flex;
     flex-wrap: wrap;
     gap: 26px 20px;
-    
+    width: 1700px;
   }
 
   .reason_card {
     width: 800px;
     height: 282px; /* 카드 너비 */
-    background-color: #0E0E17; /* 어두운 배경 */
-    border: 2px solid #2663FF; /* 파란색 테두리 */
+    background-color: #0e0e17; /* 어두운 배경 */
+    border: 2px solid #2663ff; /* 파란색 테두리 */
     border-radius: 4px; /* 둥근 모서리 */
     color: white; /* 기본 텍스트 색상 */
     align-items: center;
-   
   }
 
-
-.badge {
+  .badge {
     display: inline-block;
-    background-color: #6C4DFF; 
+    background-color: #6c4dff;
     color: white;
     padding: 6px 14px;
     border-radius: 2px;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 24px;
-}
+  }
 
-.reason_card{
-  padding-top: 36px;
-  padding-left: 36px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-/* 제목 스타일 */
-.reason_title {
+  .reason_card {
+    padding-top: 36px;
+    padding-left: 36px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  /* 제목 스타일 */
+  .reason_title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 32px;
-}
+  }
 
-/* 설명 스타일 */
-.description {
+  /* 설명 스타일 */
+  .description {
     font-size: 20px;
-    color: #564F67; /* 연한 회색 텍스트 */
+    color: #564f67; /* 연한 회색 텍스트 */
     margin-top: 8px;
     /* line-height: 1.5; */
     line-height: 150%;
-}
+  }
 
-.graph_bg{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+  .graph_bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
-.desk_graph{
-  /* position: absolute;
+  .desk_graph {
+    /* position: absolute;
   left: 0;
   bottom: 20% */
-
+  }
 }
 
-}
-
-.section04{
+.section04 {
   height: 386px;
-  background-color: #5520D3;
+  background-color: #5520d3;
   text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  position: relative;
 
-  .decoinsight01{
+  .decoinsight01 {
     position: absolute;
     left: 0;
     top: 20%;
   }
-    
 
-  .section04_title{
+  .section04_title {
     font-size: 44px;
     font-weight: bold;
-  
-    
   }
-  .insight_p{
-    color: #C3B8DD;
+  .insight_p {
+    color: #c3b8dd;
   }
-
-
 }
