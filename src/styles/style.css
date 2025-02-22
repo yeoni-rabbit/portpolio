@@ -3,6 +3,8 @@ img{
 }
 p{
   color: #939393;
+  line-height: 150%;
+  font-size: 22px;
 }
 
 
@@ -155,6 +157,8 @@ p{
   height: 2300px;
   position: relative;
   background-color: #2F2D33;
+  
+
 
   .overview{
     
@@ -185,19 +189,27 @@ p{
   
       .header_tag{
         color: #A27CFF;
-        background-color: #fff;
+        /* background-color: #fff; */
         margin-bottom: 48px;
+        font-size: 26px;
+        font-weight: bold;
       }
   
       .section02_title{
         font-weight: bold;
         font-size: 54px;
         margin-bottom: 32px;
+
+
   
   
-        .title_tag{
-          background: #6728FF;
-          }
+      .title_tag{
+        background: #6728FF;
+        }
+      
+      .title_text{
+        font-size: 26px;
+      }
   
       }
       .white_tag{
@@ -292,11 +304,12 @@ p{
     top: 1288px;
     left: 0;
     width: 100vw;
+    margin-inline: 150px;
 
     .background_title01{
       width: 8vw;
       margin-bottom: 24px;
-      margin-left: 150px;
+      /* margin-left: 150px; */
       
     }
 
@@ -304,7 +317,7 @@ p{
       font-weight: bold;
       font-size: 48px;
       margin-bottom: 40px;
-      margin-left: 150px;
+      /* margin-left: 150px; */
     }
 
     .chart{
@@ -327,11 +340,56 @@ p{
 } 
 
 .section03{
-  height: 1793px;
+  height: 1851px;
+  background-color: #000000;
+  position: relative;
+  
 
+.deskreaserch{
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%; */
+  margin-top: 120px;
+  margin-inline: 150px;
+}
 
+  .title01{
+    color: #6728FF;
+    margin-bottom: 24px;
+   
+  }
+  .title02{
+    font-weight: bold;
+    font-size: 54px;
+    margin-bottom: 32px;
+    
 
-  .reason {
+  }
+  .smallHeader{
+    margin-bottom: 36px;
+    .gray_badge{
+      display: inline-block;
+      background-color: #1F2126; 
+      color: 868686;
+      padding: 2px 6px;
+      border-radius: 2px;
+      font-size: 20px;
+      font-weight: bold;
+    /* margin-bottom: 24px; */
+    
+    }
+    
+  }
+
+  .reason{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 20px;
+    
+  }
+
+  .reason_card {
     width: 800px;
     height: 282px; /* 카드 너비 */
     background-color: #0E0E17; /* 어두운 배경 */
@@ -339,41 +397,83 @@ p{
     border-radius: 4px; /* 둥근 모서리 */
     color: white; /* 기본 텍스트 색상 */
     align-items: center;
-    /* font-family: 'Arial', sans-serif; */
-}
+   
+  }
 
-/* REASON 1 뱃지 스타일 */
+
 .badge {
     display: inline-block;
-    background-color: #6C4DFF; /* 보라색 배경 */
+    background-color: #6C4DFF; 
     color: white;
     padding: 6px 14px;
     border-radius: 2px;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 24px;
 }
 
-.reason01{
-
-  /* flex-direction: row;
+.reason_card{
+  padding-top: 36px;
+  padding-left: 36px;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 /* 제목 스타일 */
 .reason_title {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 12px;
+    margin-bottom: 32px;
 }
 
 /* 설명 스타일 */
 .description {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.5); /* 연한 회색 텍스트 */
+    color: #564F67; /* 연한 회색 텍스트 */
     margin-top: 8px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
+    line-height: 150%;
 }
 
+.graph_bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.desk_graph{
+  /* position: absolute;
+  left: 0;
+  bottom: 20% */
+
+}
+
+}
+
+.section04{
+  height: 386px;
+  background-color: #5520D3;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .decoinsight01{
+    position: absolute;
+    left: 0;
+    top: 20%;
+  }
+    
+
+  .section04_title{
+    font-size: 44px;
+    font-weight: bold;
+  
+    
+  }
+  .insight_p{
+    color: #C3B8DD;
+  }
 
 
 }
