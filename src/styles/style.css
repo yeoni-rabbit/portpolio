@@ -440,7 +440,7 @@ p {
     bottom: 0;
   }
   .titleGroup{
-    background-color: red;
+    /* background-color: red; */
     text-align: center;
     /* justify-content: center; */
 
@@ -512,14 +512,20 @@ p {
       align-items: center;
       padding-inline: 70px;
       gap: 100px;
+      text-align: center;
       
 
       .inner03{
-        background-color: #2663ff;
+        /* background-color: #2663ff; */
       }
 
       .inner03-1{
         padding-bottom: 80px;
+      }
+
+
+      .inner04{
+        
       }
     }
 
@@ -618,12 +624,17 @@ p {
 
 .section06{
   position: relative;
+  height: initial;
+  /* width: 100vw; */
+ 
+  /* 높이조정이 필요할때 */
   /* background-color: #fff; */
 
 
   .section06-inner01{
     width: 1620px;
     margin: 0 auto;
+    /* background-color: rebeccapurple; */
     
 
     .titleGroup{
@@ -668,13 +679,19 @@ p {
     }
   }
   .section06-inner02{
-    margin-top: 100px;
+    /* background-color: #fff; */
+    /* margin: 0 auto;
+    width: 1620px; */
+    
+    
    
 
     .titleGroup02{
       /* background-color: red; */
       padding-top: 120px;
       padding-bottom: 60px;
+      width: 1620px;
+    margin: 0 auto;
     
   
      
@@ -693,8 +710,17 @@ p {
 
     .bottominner-section06{
       display: flex;
-
+      /* width: 100vw; */
       position: relative;
+      /* background-color: #fff; */
+
+      .leftinner{
+        background-color: #fff;
+      }
+      .rightinner{
+        background-color: rebeccapurple;
+      }
+
       .bottominner-deco{
         .deco01{
           position: absolute;
@@ -726,7 +752,672 @@ p {
   
 
 .section07{
-  .background-section07{
+  height: initial;
+  background-color: #020202;
+  text-align: center;
+
+
+  .background{
     width: 100vw;
   }
+}
+
+.section08{
+  height: initial;
+  position: relative;
+  background-color: #080808;
+  text-align: center;
+
+  .innercontent{
+    
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    translate: -50% -50%;
+    
+
+    .titleGroup{
+      display: flex;
+      margin-bottom: 100px;
+
+      .title02{
+        display: flex;
+
+
+        .block01{
+
+        }
+      }
+    }
+
+    .p_section08{
+      text-align: center;
+
+      .purple_tag{
+        color: #9872F3;
+      }
+    }
+
+
+
+  }
+
+
+
+
+
+}
+
+.section09{
+  background-color: orange;
+  position: relative;
+  height: initial;
+  
+
+
+  .background{
+    width: 100vw;
+    position: relative;
+    
+    .patton{
+     background-color: #fff;
+     .back{
+      width: 100vw;
+      
+     }
+    }
+
+    .bottom_gra{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 99;
+    }
+    
+  }
+  .inner{
+    /* margin-top: 160px; */
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    translate: -50% -50%;
+    
+  }
+  
+
+
+  .appIcon{
+
+    position: absolute;
+    left: 73%;
+    top: 45%;
+    translate: -50% -50%;
+
+    .Icon{
+      margin-bottom: 100px;
+    }
+  }
+
+
+
+}
+
+
+.section10{
+  height: initial;
+  position: relative;
+  /* background-color: red; */
+  
+  .background_section10{
+    .back{
+      width: 100vw;
+    }
+  }
+
+  .innerContent{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    .mainphone{
+      display: flex;
+      
+      .splah_left{
+        margin-left: 10%;
+      }
+
+      .splah_right{
+        margin-right: 20%;
+        
+        
+
+      }
+
+    }
+  }
+
+
+
+  .decoGroup{
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+   
+
+    .faceDeco{
+     
+
+
+      .faceDeco01{
+        position: absolute;
+        left: 5%;
+        top: 35%;
+        /* background-color: #fff; */
+
+      }
+
+      .faceDeco02{
+        position: absolute;
+        right: 0;
+        bottom: 15%;
+        background-color: orange;
+    }
+
+
+    
+  }
+
+
+  .circleDeco{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+  
+   
+
+    .circle01{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+
+
+    }
+    .circle02{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      /* background-color: #fff; */
+    }
+    .circle03{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+    }
+
+
+
+  }
+
+  .backDeco{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    /* background-color: #fff; */
+
+
+  }
+}
+}
+
+
+
+.section11{
+  position: relative;
+  height: initial;
+  height: 2200px;
+
+  .titleGroup{
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 100px;
+  }
+
+
+  .topMainContent{
+    text-align: center;
+    position: relative;
+    
+
+    .phoneDeco{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+      
+
+    }
+
+    .phone02{
+      position: absolute;
+      left: 50%;
+      top: 58%;
+      translate: -50% -50%;
+
+
+    }
+
+
+    .decoGroup{
+
+      .deco01{
+        position: absolute;
+        left: 10%;
+        top: 65%;
+      }
+      .deco02{
+        position: absolute;
+        left: 30%;
+        top: -10%;
+      }
+      .deco03{
+        position: absolute;
+        right: 10%;
+        top: 5%;
+      }
+      .deco04{
+        position: absolute;
+        right: 20%;
+        bottom: -10%;
+      }
+    
+    }
+
+  }
+
+  .line{
+    margin-left: 20.5%;
+    margin-bottom: 24px;
+  }
+  
+
+
+  .bottomContent{
+    position: relative;
+
+    .bottomMainContent{
+      display: flex;
+      width: 1650px;
+      justify-content: space-between;
+
+      /* background-color: #fff; */
+      margin: 0 auto;
+
+
+      .phone02{
+
+        margin-top: 56px;
+      }
+
+      .phone04{
+        
+      }
+
+
+    }
+
+    .bottomDeco{
+
+      .deco01{
+
+        position: absolute;
+        left: 20%;
+        top: 34%;
+      }
+
+      .deco02{
+        position: absolute;
+        right: 24%;
+        top: 24%;
+
+      }
+
+      .deco03{
+        position: absolute;
+        left: 5%;
+        bottom: -15%;
+
+        
+
+      
+
+      }
+    }
+
+
+
+  }
+
+}
+
+.section12{
+
+  background-color: #0D0D0D;
+  position: relative;
+  
+  
+
+  .title{
+    padding-top: 100px;
+    margin-left: 150px;
+  }
+
+
+  .mainContent{
+    
+
+    .mainPhone{
+      margin-top: 160px;
+      text-align: center;
+    }
+
+    .stateDeco{
+
+      position: absolute;
+      left: 44.5%;
+      top: 49%;
+    }
+
+
+    .decoGroup{
+
+      
+      
+
+      .slideCard{
+
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+
+        gap: 32px;
+        
+
+      }
+
+      .Description{
+
+        .p_01{
+          position: absolute;
+          right: 23%;
+          top: 35%;
+          /* translate: -50% -50%; */
+        }
+
+        .p_02{
+          position: absolute;
+          right: 23%;
+          bottom: 5%;
+          /* translate: -50% -50%; */
+        }
+      }
+
+      .PopupCard{
+
+
+        .TipLine{
+
+
+
+          position: absolute;
+          left: 40.5%;
+          top: 80%;
+          /* translate: -50% -50%; */
+        }
+
+        .Popupcard01{
+
+          position: absolute;
+          left: 10%;
+          top: 50%;
+          /* translate: -50% -50%; */
+        }
+      }
+
+    }
+
+
+
+
+
+  }
+
+}
+
+.section13{
+
+  background-color: #47239E;
+  height: initial;
+  position: relative;
+  
+
+  .background{
+    text-align: center;
+  }
+
+  .content{
+    /* position: absolute; */
+    /* left: 0;
+    top: 0; */
+
+
+    .phone01{
+      position: absolute;
+      left: 10%;
+      top: 10%;
+     
+
+    }
+    .phone02{
+      position: absolute;
+      left: 27%;
+      top: 22%;
+      
+    }
+    .phone03{
+      position: absolute;
+      right: 20%;
+      top: 35.5%;
+    }
+    .phone04{
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+
+    }
+
+    .deco{
+      position: absolute;
+      left: 21%;
+      bottom: -1%;
+    }
+
+
+  }
+}
+
+.section14{
+  height: 2300px;
+  position: relative;
+  background-color: #1A1B1B;
+ 
+
+
+  .background{
+    width: 100vw;
+    height: ;
+    .back02{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+    }
+
+  }
+
+  .content{
+    /* position: absolute;
+    left: 0%;
+    top: 0%; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    
+    
+    .title{
+      /* margin-top: 100px; */
+      position: absolute;
+      left: 35%;
+      top: 5%;
+      
+      
+      
+      
+    }
+
+    .phone01{
+
+      position: absolute;
+      top: 20%;
+      left: 15%;
+    }
+
+
+    .phone02{
+      position: absolute;
+      right: 11%;
+      bottom: -10%;
+    }
+
+    .deco01{
+      position: absolute;
+      bottom: 7%;
+      left: 15%;
+    }
+
+    .deco02{
+      position: absolute;
+      top: 24%;
+      left: 41%;
+
+    }
+
+  }
+
+}
+
+.section15{
+  background-color: #1A1B1B;
+  position: relative;
+  height: initial;
+
+  .content{
+    /* position: relative; */
+
+
+
+    .topContent{
+      text-align: center;
+      background-color: #47239e;
+      height: 360px;
+      z-index: 99;
+      position: relative;
+    }
+  }
+
+  .phone01{
+    margin-left: 48%;
+    margin-top: 13%;
+  }
+
+  .deco{
+    /* position: relative; */
+
+    .deco01{
+      position: absolute;
+      top: 8%;
+      right: 5%;
+     
+
+    }
+    .deco02{
+      position: absolute;
+      right: 12%;
+      bottom: 5%;
+    }
+
+    .card01{
+      position: absolute;
+      bottom: 5%;
+      left: 12%;
+    }
+
+    .card02{
+      position: absolute;
+      bottom: 0;
+      left: 33%;
+    }
+
+
+
+
+
+  }
+
+  
+
+}
+
+.section16{
+
+  background-color: #1A1B1B;
+  height: initial;
+  position: relative;
+
+  .content{
+    text-align: center;
+    padding-top: 200px;
+    
+  }
+  .deco{
+    
+    .deco01{
+      position: absolute;
+      top: 10%;
+      right: 25%;
+    }
+
+    .deco02{
+      position: absolute;
+      top: 0;
+      right: 10%;
+    }
+
+    .deco03{
+      position: absolute;
+      bottom: 10%;
+    }
+  }
+}
+
+.section17{
+  background-color: #0d0d0d;
+
+
 }
