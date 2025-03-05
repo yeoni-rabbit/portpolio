@@ -7,6 +7,7 @@ p {
 .section01 {
   position: relative;
   background-color: #080414;
+  height: initial;
 
   img {
     width: 100%;
@@ -142,7 +143,7 @@ p {
   .overview {
     width: 100vw;
     height: 1203px;
-    margin-top: 140px;
+    padding-top: 140px;
     margin-bottom: 120px;
 
     img {
@@ -461,7 +462,9 @@ p {
 .section05{
   background-color: #000000;
   position: relative;
-  height: 2500px;
+  /* height: 2500px; */
+  height: initial;
+  padding-bottom: 100px;
 
   .userReaserch{
     width: 1620px;
@@ -493,6 +496,7 @@ p {
     display: flex;
     justify-content: center;
     
+    
 
     border-radius: 4px;
     
@@ -501,8 +505,9 @@ p {
       margin: 0 auto;
       align-items: center;
       padding: 70px;
+
       
-      /* background-color: red; */
+      background-color: red;
 
     }
 
@@ -525,6 +530,14 @@ p {
 
 
       .inner04{
+
+        background-color: #fff;
+        
+
+        .inner04_1{
+          
+
+        }
         
       }
     }
@@ -562,13 +575,13 @@ p {
 
 
 .opinionBox{
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
   display: flex;
   width: 1620px;
   flex-wrap: wrap;
   
   gap: 16px;
-  position: relative;
+  /* position: relative; */
 
 
 
@@ -576,14 +589,14 @@ p {
     padding-top: 84px;
   }
 
-  .box04{
+  /* .box04{
     padding-top: 84px;
   }
 
   .box05{
     
   }
-  
+   */
 
 .deco_section05{
   
@@ -591,29 +604,43 @@ p {
 
   .deco01-section05{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 8%;
+    bottom: 5%;
   }
 
   .deco02-section05{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 010%;
+    bottom: 0;
   }
   .deco03-section05{
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
   }
   .deco04-section05{
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
   }
   
   
 }
 
+
+}
+
+
+.gradaiton{
+  /* width: 100vw; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  .gra{
+    width: 100vw;
+    height: 1000px;
+  }
 
 }
 }
@@ -838,9 +865,10 @@ p {
   .inner{
     /* margin-top: 160px; */
     position: absolute;
-    left: 55%;
+    left: 63%;
     top: 50%;
     translate: -50% -50%;
+   
     
   }
   
@@ -849,8 +877,8 @@ p {
   .appIcon{
 
     position: absolute;
-    left: 73%;
-    top: 45%;
+    left: 60%;
+    top: 28%;
     translate: -50% -50%;
 
     .Icon{
@@ -880,12 +908,20 @@ p {
     left: 50%;
     top: 50%;
     translate: -50% -50%;
+    /* background-color: #fff; */
+
+    .title{
+      
+    }
 
     .mainphone{
       display: flex;
+      /* background-color: #fff; */
       
       .splah_left{
         margin-left: 10%;
+        position: absolute;
+        left: %;
       }
 
       .splah_right{
@@ -912,7 +948,7 @@ p {
 
       .faceDeco01{
         position: absolute;
-        left: 5%;
+        left: 0;
         top: 35%;
         /* background-color: #fff; */
 
@@ -970,6 +1006,12 @@ p {
     top: 50%;
     translate: -50% -50%;
     /* background-color: #fff; */
+
+    .deco01{
+      position: absolute;
+      left: 0;
+      top: 10%;
+    }
 
 
   }
@@ -1110,6 +1152,7 @@ p {
 
   background-color: #0D0D0D;
   position: relative;
+  height: initial;
   
   
 
@@ -1123,15 +1166,16 @@ p {
     
 
     .mainPhone{
-      margin-top: 160px;
-      text-align: center;
+      margin-top: 130px;
+      /* text-align: center; */
+      margin-left: 30%;
     }
 
     .stateDeco{
 
       position: absolute;
-      left: 44.5%;
-      top: 49%;
+      left: 37%;
+      top: 48%;
     }
 
 
@@ -1145,7 +1189,7 @@ p {
         display: flex;
         position: absolute;
         top: 50%;
-        right: 5%;
+        left: 59%;
 
         gap: 32px;
         
@@ -1156,14 +1200,14 @@ p {
 
         .p_01{
           position: absolute;
-          right: 23%;
+          right: 22%;
           top: 35%;
           /* translate: -50% -50%; */
         }
 
         .p_02{
           position: absolute;
-          right: 23%;
+          right: 21%;
           bottom: 5%;
           /* translate: -50% -50%; */
         }
@@ -1177,7 +1221,7 @@ p {
 
 
           position: absolute;
-          left: 40.5%;
+          left: 31.5%;
           top: 80%;
           /* translate: -50% -50%; */
         }
@@ -1185,8 +1229,8 @@ p {
         .Popupcard01{
 
           position: absolute;
-          left: 10%;
-          top: 50%;
+          left: 18%;
+          top: 60%;
           /* translate: -50% -50%; */
         }
       }
@@ -1418,6 +1462,38 @@ p {
 
 .section17{
   background-color: #0d0d0d;
+  text-align: center;
+  height: initial;
+  position: relative;
+  height: 1650px;
 
+  .title{
+    padding-top: 120px;
+  }
+
+  .content{
+    margin-top: 100px;
+  }
+
+  .deco{
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+
+    .deco01{
+
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .deco02{
+      position: absolute;
+      right: 0;
+      bottom: -10%;
+    }
+
+
+  }
 
 }
