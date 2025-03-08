@@ -304,7 +304,8 @@ p {
       position: absolute;
       left: 50%;
       top: 23%;
-      translate: -50% 0%;
+      /* translate: -50% 0%; */
+      transform:translate(-50%, 0);
       gap: 24px;
       margin-top: 40px;
 
@@ -348,9 +349,12 @@ p {
         position: relative;
         .deco01{
           position: absolute;
-          left: 50%;
+          left: 30%;
           top: 50%;
-          translate: -50% -50%;
+          /* translate: -50% -50%; */
+          overflow: hidden;
+          width: 0;
+          /* 272 */
 
         }
         .deco02{
@@ -528,14 +532,27 @@ p {
 }
 
 .section04 {
-  height: 386px;
-  background-color: #5520d3;
-  /* text-align: center; */
-  align-items: center;
-  justify-content: center;
+
   display: flex;
-  flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: initial;
+  background: #000;
+  height: 386px;
+  /* text-wrap: nowrap; */
+  /* text-align: center; */
+
+
+  .cover{
+    width: 100vw;
+    height: 386px;
+    background-color: #5520d3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 
   .decoinsight01 {
     position: absolute;
@@ -798,6 +815,7 @@ p {
   
       .bottominner{
         display: flex;
+        perspective: 600px;
         justify-content: space-between;
   
       }
@@ -939,13 +957,10 @@ p {
         gap: 4px;
 
 
-        .block01,
-        .block03{
-          padding-top: 32px;
-
-          animation: dongdong 0.5s infinite alternate;
-
-        }
+        .block01{animation: dongdong 0.5s infinite alternate 0.2s;}
+        .block02{animation: dongdong 0.5s infinite alternate 0.4s;}
+        .block03{animation: dongdong 0.5s infinite alternate 0.6s;}
+        .block04{animation: dongdong 0.5s infinite alternate 0.8s;}
       
     }
 
@@ -1129,6 +1144,16 @@ p {
   }
 
 
+  
+  @keyframes loop {
+    from{
+      transform:translateX(0)
+    }
+    to{
+      transform:translateX(-100%)
+    }
+  }
+
 
   .decoGroup{
     
@@ -1146,9 +1171,18 @@ p {
       }
 
       .faceDeco02{
+        width: 813px;
+        overflow: hidden;
+     
         position: absolute;
         right: 0;
         bottom: 10%;
+
+        .cover{
+          display: flex;
+          animation: loop 2s infinite linear
+        }
+        
         /* background-color: orange; */
     }
 
