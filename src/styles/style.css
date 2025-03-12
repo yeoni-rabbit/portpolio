@@ -1171,12 +1171,13 @@ p {
       }
 
       .faceDeco02{
-        width: 813px;
+        /* width: 813px; */
+        width: 630px;
         overflow: hidden;
      
         position: absolute;
         right: 0;
-        bottom: 10%;
+        bottom: 35%;
 
         .cover{
           display: flex;
@@ -1383,13 +1384,14 @@ p {
 
 
   .mainContent{
-    /* position: relative; */
+    
   
     .mainPhone{
       
       margin-top: 130px;
       margin-left: 30%;
       position: relative;
+      overflow: hidden;
       
         
       }
@@ -1399,9 +1401,10 @@ p {
         display: flex;
         position: absolute;
         top: 40%;
-        left: 59%;
+        left: 67%;
 
-        gap: 32px;
+        gap: 24px;
+       
         
 
       }
@@ -1427,14 +1430,14 @@ p {
       }
       .p_01{
         position: absolute;
-        right:0%;
+        right:12%;
         top: 25%;
       
       }
 
       .p_02{
         position: absolute;
-        right: 0%;
+        right: 12%;
         bottom: 5%;
         
       }
@@ -1483,14 +1486,14 @@ p {
     }
     .phone02{
       position: absolute;
-      left: 27%;
-      top: 22%;
+      left: 36.5%;
+      top: 27%;
       
     }
     .phone03{
       position: absolute;
-      right: 20%;
-      top: 35.5%;
+      right: -10%;
+      bottom: 4%;
     }
     .phone04{
       position: absolute;
@@ -1518,17 +1521,17 @@ p {
 
   .background{
     width: 100vw;
-    height: ;
-    .back02{
+    
+    /* .back02{
       position: absolute;
       top: 0;
       left: 0;
       width: 100vw;
-    }
+    } */
 
   }
 
-  .content{
+  
     
     .title{
       /* margin-top: 100px; */
@@ -1541,36 +1544,45 @@ p {
       
     }
 
-    .phone01{
+    .leftphone{
+      
 
-      position: absolute;
-      top: 20%;
-      left: 5%;
+      .phone01{
+
+        position: absolute;
+        top: 20%;
+        left: 1%;
+      }
+
+      .deco01{
+        position: absolute;
+        bottom: 7%;
+        left: 15%;
+      }
+  
+      .deco02{
+        position: absolute;
+        top: 24%;
+        left: 38%;
+  
+      }
     }
+
+
+    
 
 
     .phone02{
       position: absolute;
-      right: 12.5%;
+      right: -2%;
       bottom: -8%;
     }
 
-    .deco01{
-      position: absolute;
-      bottom: 7%;
-      left: 15%;
-    }
-
-    .deco02{
-      position: absolute;
-      top: 24%;
-      left: 41%;
-
-    }
+    
 
   }
 
-}
+
 
 .section15{
   background-color: #1A1B1B;
@@ -1592,37 +1604,53 @@ p {
   }
 
   .phone01{
+    position: relative;
     text-align: right;
-    /* margin-left: 48%; */
-    /* margin-top: 13%; */
-  }
 
-  .deco{
-    /* position: relative; */
+    .phone01_01{
+      padding-top: 18%;
+      position: relative;
+      z-index: 99;
+      
+    }
 
     .deco01{
       position: absolute;
-      top: 8%;
-      right: 5%;
-     
+      left: 40%;
+      top: -1.5%;
+      
 
     }
     .deco02{
       position: absolute;
       right: 12%;
-      bottom: 5%;
+      bottom: 4%;
+      
+      
+
     }
 
+
+
+
+  }
+
+  .deco{
+    position: absolute;
+    left: 3%;
+    bottom: 0;
+    display: flex;
+    margin-bottom: 320px;
+    gap: 32px;
+   
+
     .card01{
-      position: absolute;
-      bottom: 5%;
-      left: 12%;
+      
     }
 
     .card02{
-      position: absolute;
-      bottom: 0;
-      left: 33%;
+      padding-top: 70px;
+     
     }
 
 
@@ -1639,37 +1667,47 @@ p {
 
   background-color: #1A1B1B;
   height: initial;
-  /* position: relative; */
-
-  .content{
+  padding-top: 250px;
+  position: relative;
+ 
+  
+.phone{
+  position: relative;
+  .phones{
     text-align: center;
-    padding-top: 200px;
-    position: relative;
+    
+  }
 
+  .deco01{
+    position: absolute;
+    top: 0%;
+    right: 15%;
+  }
+
+  .deco02{
+    position: absolute;
+    top: 30%;
+    right: 2%;
+  }
+
+  .deco03{
+    position: absolute;
+    bottom: 33%;
+    right: 10%;
+  }
+
+
+}
+  
+ 
     
     
-      .deco01{
-        position: absolute;
-        top: 10%;
-        right: 25%;
-      }
-  
-      .deco02{
-        position: absolute;
-        top: 0;
-        right: 10%;
-      }
-  
-      .deco03{
-        position: absolute;
-        bottom: 10%;
-        right: 0;
-      }
+      
     
     
   }
   
-}
+
 
 .section17{
   background-color: #0d0d0d;
@@ -1706,5 +1744,221 @@ p {
 
 
   }
+
+}
+
+.section18{
+  height: initial;
+  height: 1650px;
+  position: relative;
+
+
+  .title{
+    padding-top: 100px;
+    margin-left: 150px;
+
+  }
+
+
+  .back{
+    /* position: relative; */
+    
+    .chipsback{
+      position: absolute;
+      left: 0%;
+      top: 25%;
+    }
+
+    .chips01{
+      position: absolute;
+      left: 5%;
+      top: 25%;
+    }
+    .chips02{
+      position: absolute;
+      left: 20%;
+      top: 30.5%;
+    }
+    .chips03{
+      position: absolute;
+      left: 23%;
+      top: 36%;
+    }
+
+  }
+
+
+  .circle_back{
+    position: relative;
+    /* z-index: ; */
+    text-align: center;
+    margin-top: 150px;
+  }
+  .mainContent{
+    
+
+
+    .phone01{
+     position: absolute;
+     left: 40%;
+     top: 50%;
+     translate: -50% -50%;
+      
+    }
+
+
+
+
+    .phone02{
+      position: absolute;
+      left: 54%;
+      top: 25.8%;
+      /* translate: -50% -50%; */
+    }
+
+    .deco01{
+      position: absolute;
+      right: 30%;
+      top: 15%;
+    }
+    .deco02{
+      position: absolute;
+      right: 10%;
+      top: 20%;
+    }
+    .deco03{position: absolute;
+      right: 7%;
+      top: 65%;
+    }
+  }
+}
+
+.section19{
+  background-color: #161616;
+  height: initial;
+
+
+  .title{
+    padding-top: 100px;
+    margin-left: 150px;
+
+  }
+  
+
+  .inner{
+    display: flex;
+    margin-top: 100px;
+    
+
+    .leftContent{
+      position: relative;
+
+      .chips01{
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+      }
+      .chips02{
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+      }
+
+
+
+
+    }
+
+  }
+
+  
+
+
+}
+
+.section20{
+  background-color: #51319C;
+  position: relative;
+
+  .title{
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .phone{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+  }
+
+  .deco{
+    /* position: relative; */
+
+
+
+    .deco01{
+      position: absolute;
+      left: -1%;
+      top: 20%;
+    }
+
+    .deco02{
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+    }
+
+    .deco03{
+      position: absolute;
+      right: 13%;
+      bottom: 10%;
+    }
+
+    .deco04{
+      position: absolute;
+      right: 5%;
+      top: 30%;
+    }
+  }
+
+
+
+
+
+}
+
+.section21{
+  height: initial;
+  background-color: #080808;
+
+  .topimg{
+    width: 100vw;
+    text-align: center;
+  }
+
+  .title{
+    text-align: center;
+  }
+  .bottomimg{
+    width: 100vw;
+    position: relative;
+
+
+    .end{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      translate: -50% -50%;
+    }
+  }
+
+
+
+
+
 
 }

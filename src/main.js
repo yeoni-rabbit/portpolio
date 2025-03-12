@@ -20,7 +20,7 @@ ScrollTrigger.create({
   start: 'top 20%',
   // end: 'bottom bottom',
   // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.overDeco_eyes img',{y:300,opacity:0}), 
+  animation: gsap.from('.overDeco_eyes',{y:300,opacity:0}), 
   toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
@@ -55,6 +55,18 @@ ScrollTrigger.create({
   // markers: true,
   scrub: true,
 })
+ScrollTrigger.create({
+  trigger: '.section02',
+  start: '20% 10%',
+  end: 'bottom center',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section02 .chart > div',{y:30,opacity:0}),
+  // toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
 
 
 
@@ -63,16 +75,20 @@ ScrollTrigger.create({
 
 
 
-const 소연0 = gsap.timeline();
-소연0.from('.section02 .chart > div',{y:30,opacity:0}),
-소연0.to('.section02 .deco01',{width:272}),
+
+
+
 
 ScrollTrigger.create({
   trigger: '.section02',
-  start: '30% top',
+  start: 'top top',
   end: 'bottom bottom',
-  animation: 소연0,
-  markers:true,
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section02 .background .chart .chart01 .deco02 > img ',{stagger:0.1,y:50,opacity:0}),
+  // toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
   scrub: true,
 })
 
@@ -119,22 +135,6 @@ ScrollTrigger.create({
   end: '60% center',
   // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
   animation: gsap.from('.section03 .question02 > div',{stagger:0.1,y:30,opacity:0}),
-  // toggleActions: 'restart reverse restart reverse',
-  // pin: false,
-  // pinSpacing: false,
-  // markers: true,
-  scrub: true,
-})
-
-
-
-
-ScrollTrigger.create({
-  trigger: '.section04',
-  start: '-500 top',
-  end: '+=1000',
-  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.section04 .cover',{width:'30vw',height:'50px',opacity:0}),
   // toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
@@ -246,15 +246,6 @@ ScrollTrigger.create({
   scrub: true,
 })
 
-ScrollTrigger.create({
-  trigger: '.section06',
-  start: 'top center',
-  end: 'bottom bottom',
-  animation: gsap.to('.bottominner > div',{rotationY:360}),
-  scrub: true,
-})
-
-
 
 ScrollTrigger.create({
   trigger: '.section06',
@@ -282,24 +273,25 @@ ScrollTrigger.create({
   scrub: true,
 })
 
-
-
-
-
-
-
 ScrollTrigger.create({
-  trigger: '.section9',
-  start: 'top 30%',
-  // end: 'bottom 20%',
-  animation: gsap.from('.inner > img',{opacity: 1, duration: 1, ease: "power2.out"}),
-  // animation: gsap.from('.overDeco_eyes',{y:300,opacity:0}),
-  toggleActions: 'play none none none',
+  trigger: '.section09',
+  start:'30% 10%',
+  // end: '60% center',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section09 .inner > div',{stagger:0.1, y:300,opacity:0}),
+  // toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
   // markers: true,
   scrub: true,
 })
+
+
+
+
+
+
+
 
 
 
@@ -330,20 +322,14 @@ ScrollTrigger.create({
 
 
 
-const 소연 = gsap.timeline();
-
-소연.from('.section11 .titleGroup .title01 > img',{y:300,opacity:0})
-소연.from('.bottomContent .bottomMainContent > div',{duration:1, stagger:0.3,y:300,opacity:0})
-
-
 
 ScrollTrigger.create({
   trigger: '.section11',
-  start: 'top center',
+  start: 'bottom 20%',
   end: '80% 80%',
   // animation: gsap.to('.bottomContent .bottomMainContent > div',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: 소연,
-  // toggleActions: 'restart reverse restart reverse',
+  animation: gsap.from('.section11 .titleGroup .title01 > img',{y:300,opacity:0}),
+  toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
   // markers: true,
@@ -353,6 +339,93 @@ ScrollTrigger.create({
 
 
 
+
+
+
+
+
+ScrollTrigger.create({
+  trigger: '.section11',
+  start: '20% 20%',
+  end: '80% 80%',
+  // animation: gsap.to('.bottomContent .bottomMainContent > div',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.bottomContent .bottomMainContent > div',{duration:1, stagger:0.3,y:300,opacity:0}),
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+
+
+
+ScrollTrigger.create({
+  trigger: '.section12',
+  start: '30% top',
+  end: 'bottom bottom',
+  // animation: gsap.to('.bottomContent .bottomMainContent > div',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section12 .title .img',{stagger:0.1, y:300,opacity:0}),
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+
+
+ScrollTrigger.create({
+  trigger: '.section12',
+  start: '10% 60%',
+  end: 'bottom bottom',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.mainContent .stateDeco > img',{stagger0:0.1, y:300,opacity:0}), 
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.section12',
+  start: '10% 60%',
+  end: 'bottom bottom',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.mainContent .PopupCard > div',{stagger:0.1, y:300,opacity:0}), 
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.section13',
+  start: '10% 60%',
+  // end: 'bottom bottom',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section13 .content > div',{stagger:0.1, y:300,opacity:0}), 
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.section14',
+  start: 'top 80%',
+  end: 'bottom bottom',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.content > div',{stagger:0.1, y:300,opacity:0}), 
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  markers: true,
+  scrub: true,
+})
 
 
 
