@@ -1134,6 +1134,22 @@ p {
           bottom: 25%;
           animation: dongdong_light 1.3s infinite alternate;
           
+          .faceDeco02{
+            /* width: 813px; */
+            width: 630px;
+            overflow: hidden;
+         
+            position: absolute;
+            right: 0;
+            bottom: 35%;
+    
+            .cover{
+              display: flex;
+              animation: loop 2s infinite linear
+            }
+            
+            /* background-color: orange; */
+        }
           
   
         }
@@ -1170,22 +1186,7 @@ p {
 
       }
 
-      .faceDeco02{
-        /* width: 813px; */
-        width: 630px;
-        overflow: hidden;
      
-        position: absolute;
-        right: 0;
-        bottom: 35%;
-
-        .cover{
-          display: flex;
-          animation: loop 2s infinite linear
-        }
-        
-        /* background-color: orange; */
-    }
 
 
     

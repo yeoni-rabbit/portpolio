@@ -57,10 +57,10 @@ ScrollTrigger.create({
 })
 ScrollTrigger.create({
   trigger: '.section02',
-  start: '20% 10%',
-  end: 'bottom center',
+  start: '40% 10%',
+  end: '80% center',
   // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.section02 .chart > div',{y:30,opacity:0}),
+  animation: gsap.from('.section02 .chart > div',{stagger:0.1,y:30,opacity:0}),
   // toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
@@ -273,20 +273,6 @@ ScrollTrigger.create({
   scrub: true,
 })
 
-ScrollTrigger.create({
-  trigger: '.section09',
-  start:'30% 10%',
-  // end: '60% center',
-  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.section09 .inner > div',{stagger:0.1, y:300,opacity:0}),
-  // toggleActions: 'restart reverse restart reverse',
-  // pin: false,
-  // pinSpacing: false,
-  // markers: true,
-  scrub: true,
-})
-
-
 
 
 
@@ -360,31 +346,17 @@ ScrollTrigger.create({
 
 
 
-ScrollTrigger.create({
-  trigger: '.section12',
-  start: '30% top',
-  end: 'bottom bottom',
-  // animation: gsap.to('.bottomContent .bottomMainContent > div',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.section12 .title .img',{stagger:0.1, y:300,opacity:0}),
-  toggleActions: 'restart reverse restart reverse',
-  // pin: false,
-  // pinSpacing: false,
-  // markers: true,
-  scrub: true,
-})
-
-
 
 ScrollTrigger.create({
   trigger: '.section12',
   start: '10% 60%',
   end: 'bottom bottom',
   // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.mainContent .stateDeco > img',{stagger0:0.1, y:300,opacity:0}), 
-  toggleActions: 'restart reverse restart reverse',
+  animation: gsap.from('.mainContent .stateDeco > img',{ x:300,scale:0.7,opacity:0}), 
+  // toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
-  // markers: true,
+  markers: true,
   scrub: true,
 })
 
@@ -423,7 +395,7 @@ ScrollTrigger.create({
   toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
-  markers: true,
+  // markers: true,
   scrub: true,
 })
 
