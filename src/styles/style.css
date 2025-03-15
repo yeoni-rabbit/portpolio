@@ -347,9 +347,10 @@ p {
       .chart01{
 
         position: relative;
+
         .deco01{
           position: absolute;
-          left: 30%;
+          left: 23%;
           top: 50%;
           /* translate: -50% -50%; */
           overflow: hidden;
@@ -630,7 +631,7 @@ p {
     
 
     .box01{
-      animation: blink_re 2s infinite alternate forwards;
+      /* animation: blink_re 2s infinite alternate forwards; */
       padding-left: 50px;
 
     }
@@ -923,10 +924,12 @@ p {
 
 .section08{
   height: initial;
+  height: 1185px;
   position: relative;
   background-color: #080808;
   text-align: center;
   .background{
+    
     animation: blink 0.8s infinite alternate;
   }
 
@@ -987,6 +990,7 @@ p {
   /* background-color: orange; */
   height: initial;
   position: relative;
+  z-index:99;
   
   
 
@@ -996,7 +1000,7 @@ p {
     
     
     .patton{
-     background-color: #fff;
+    
      .back{
       width: 100vw;
       
@@ -1026,6 +1030,7 @@ p {
 
 
   .appIcon{
+    animation: dongdong_light 2s infinite alternate;
 
     position: absolute;
     left: 65%;
@@ -1045,13 +1050,13 @@ p {
 .section10{
   height: initial;
   position: relative;
-  /* height: 2000px; */
+
   
   
   .background_section10{
     .back{
       width: 100vw;
-      /* height: 100vw; */
+     
     }
   }
 
@@ -1070,19 +1075,20 @@ p {
     }
 
     .mainphone{
-      display: flex;
+     
+      
 
 
       .circleDeco{
-       
-      
-       
-    
+        
+
+
         .circle01{
           position: absolute;
           left: 50%;
           top: 50%;
           translate: -50% -50%;
+      
     
     
         }
@@ -1098,7 +1104,12 @@ p {
           left: 50%;
           top: 50%;
           translate: -50% -50%;
+        
         }
+    
+       
+      
+       
     
     
     
@@ -1125,6 +1136,25 @@ p {
           left: 25%;
           top: 18%;
           animation: dongdong_light 1.3s infinite alternate;
+
+
+          .faceDeco01{
+
+            width: 630px;
+            overflow: hidden;
+
+            position: absolute;
+            left: -80%;
+            top: 35%;
+
+
+            .cover{
+              display: flex;
+              animation: loop_ex 2s infinite linear
+            }
+          
+    
+          }
         }
   
         .splah_right{
@@ -1140,8 +1170,8 @@ p {
             overflow: hidden;
          
             position: absolute;
-            right: 0;
-            bottom: 35%;
+            right: -60%;
+            bottom: 15%;
     
             .cover{
               display: flex;
@@ -1167,6 +1197,14 @@ p {
     }
     to{
       transform:translateX(-100%)
+    }
+  }
+  @keyframes loop_ex {
+    from{
+      transform:translateX(0)
+    }
+    to{
+      transform:translateX(100%)
     }
   }
 
