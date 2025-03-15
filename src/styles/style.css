@@ -574,6 +574,7 @@ p {
       font-size: 44px;
       font-weight: bold;
       padding-bottom: 36px;
+      white-space: nowrap;
     }
     .insight_p{
       color: #c3b8dd;
@@ -1019,8 +1020,8 @@ p {
     /* margin-top: 160px; */
     position: absolute;
     left: 63%;
-    top: 45%;
-    translate: -50% -50%;
+    top:0;
+    translate: -50% 0;
     overflow: hidden;
     /* opacity: 0; */
    
@@ -1337,6 +1338,10 @@ p {
       width: 1650px;
       justify-content: space-between;
 
+      & > div{
+        transform: translateY(100px);
+        opacity: 0;
+      }
     
       margin: 0 auto;
 
@@ -1922,6 +1927,12 @@ p {
 .section20{
   background-color: #51319C;
   position: relative;
+  height: initial;
+  /* position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0; */
+  /* height: initial; */
 
   .title{
     text-align: center;
@@ -1930,8 +1941,12 @@ p {
 
   .phone{
     text-align: center;
-    position: relative;
-    z-index: 99;
+    margin: 0 auto;
+    /* position: absolute; */
+    /* transform:translateX(-50%); */
+    /* left: 50%; */
+    /* bottom: 0; */
+    /* z-index: 99; */
   }
 
   .deco{

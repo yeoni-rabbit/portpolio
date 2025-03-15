@@ -46,8 +46,8 @@ ScrollTrigger.create({
 const yeon_02 = gsap.timeline();
 yeon_02.from ('.section02 .titleGroup > div',{stagger:0.1,y:30,opacity:0}),
 yeon_02.from('.section02 .chart > div',{y:30,opacity:0}),
-yeon_02.to('.section02 .deco01',{width:272}),
-yeon_02.to('.section02 .chart .deco02',{scale:1,ease:"back.inOut(1.7)"}),
+yeon_02.to('.section02 .deco01',{width:272},'+=2'),
+yeon_02.from('.section02 .chart .deco02',{scale:0,ease:"back.inOut(1.7)"},'<'),
 
  
 
@@ -132,12 +132,18 @@ const yeon_03 = gsap.timeline();
 //   markers: true,
 //   scrub: true,
 // })
+
+const yeon_04 = gsap.timeline();
+yeon_04.from('.section04 .cover',{width:'30vw',height:'50px',opacity:0})
+yeon_04.from('.section04 .decoinsight01',{opacity:0,x:-30},'+=0.1')
+yeon_04.from('.section04 .decoinsight02',{opacity:0,x:30},'<')
+
 ScrollTrigger.create({
   trigger: '.section04',
   start: 'top center',
-  end: '+=1000',
+  end: '+=600',
   // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.section04 .cover',{width:'30vw',height:'50px',opacity:0}),
+  animation: yeon_04,
   // toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
@@ -343,19 +349,19 @@ ScrollTrigger.create({
 const yeon_11 = gsap.timeline();
 yeon_11.from('.section11 .titleGroup .title01 > img',{y:300,opacity:0})
 yeon_11.from('.section11 .topMainContent img',{y:300,opacity:0})
-yeon_11.from('.bottomContent .bottomMainContent > div',{duration:1, stagger:0.3,y:300,opacity:0})
+yeon_11.to('.bottomContent .bottomMainContent > div',{duration:1, stagger:0.3,y:0,opacity:1})
  
  
  
  ScrollTrigger.create({
    trigger: '.section11',
-   start: '-1000 30%',
-  //  end: 'bottom 90%',
+   start: 'top center',
+   end: 'bottom bottom',
    animation: yeon_11,
    // toggleActions: 'restart reverse restart reverse',
    // pin: false,
    // pinSpacing: false,
-  //  markers: true,
+   markers: true,
    scrub: true,
  })
  
@@ -365,20 +371,6 @@ yeon_11.from('.bottomContent .bottomMainContent > div',{duration:1, stagger:0.3,
 
 
 
-
-
-ScrollTrigger.create({
-  trigger: '.section11',
-  start: '20% 20%',
-  end: '80% 80%',
-  // animation: gsap.to('.bottomContent .bottomMainContent > div',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.bottomContent .bottomMainContent > div',{duration:1, stagger:0.3,y:300,opacity:0}),
-  toggleActions: 'restart reverse restart reverse',
-  // pin: false,
-  // pinSpacing: false,
-  // markers: true,
-  scrub: true,
-})
 
 
 const yeon_12 = gsap.timeline();
@@ -394,7 +386,7 @@ const yeon_12 = gsap.timeline();
   start: 'top center',
   end: 'bottom bottom',
   animation: yeon_12,
-  markers:true,
+  // markers:true,
   scrub: true,
 })
 
@@ -436,7 +428,7 @@ ScrollTrigger.create({
   start: 'top 80%',
   end: 'bottom bottom',
   // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
-  animation: gsap.from('.content > div',{stagger:0.1, y:300,opacity:0}), 
+  animation: gsap.from('.section14 .content > div',{stagger:0.1, y:300,opacity:0}), 
   toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
