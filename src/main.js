@@ -207,8 +207,8 @@ ScrollTrigger.create({
 ScrollTrigger.create({
   trigger: '.section06',
   start: 'top center',
-  end: 'bottom bottom',
-  animation: gsap.to('.bottominner > div',{rotationY:360}),
+  end: '50% bottom',
+  animation: gsap.to('.bottominner > div',{rotationY:180}),
   scrub: true,
 })
 
