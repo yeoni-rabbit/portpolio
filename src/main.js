@@ -47,7 +47,7 @@ const yeon_02 = gsap.timeline();
 yeon_02.from ('.section02 .titleGroup > div',{stagger:0.1,y:30,opacity:0}),
 yeon_02.from('.section02 .chart > div',{y:30,opacity:0}),
 yeon_02.to('.section02 .deco01',{width:272},'+=2'),
-yeon_02.from('.section02 .chart .deco02',{scale:0,ease:"back.inOut(1.7)"},'<'),
+yeon_02.from('.section02 .chart .deco03',{scale:0,ease:"back.inOut(1.7)"},'<'),
 
  
 
@@ -238,6 +238,62 @@ ScrollTrigger.create({
   // markers: true,
   scrub: true,
 })
+
+ScrollTrigger.create({
+  trigger: '.section06',
+  start:'top top',
+  end: '60% center',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section06 .section06-inner02 .leftinner > div',{x:-300,opacity:0}),
+  // toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.section06',
+  start:'top top',
+  end: '60% center',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.from('.section06 .section06-inner02 .rightinner > div',{x:300,opacity:0}),
+  // toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+
+
+
+ScrollTrigger.create({
+  trigger: '.section06',
+  start:'80% 60%',
+  // end: '60% center',
+  // animation: gsap.to('.overDeco_circle img',{duration:1,stagger:0.2,scale:1,ease:"back.inOut(1.7)"}),
+  animation: gsap.to('.section07 .background img',{width:1920},'+=2'),
+  // toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -445,9 +501,105 @@ ScrollTrigger.create({
   toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
-  markers: true,
+  // markers: true,
   scrub: true,
 })
+
+
+const yeon_17 = gsap.timeline();
+yeon_17.from('.section17 .title img ',{y:300,opacity:0})
+yeon_17.from('.section17 .content img ',{stagger:0.1, y:300,opacity:0})
+
+
+ScrollTrigger.create({
+  trigger: '.section17',
+  start: 'top center',
+  end: 'bottom bottom',
+  animation: yeon_17,
+  // markers:true,
+  scrub: true,
+})
+
+
+const yeon_18 = gsap.timeline();
+yeon_18.from('.section18 .title img ',{y:300,opacity:0})
+yeon_18.from('.section18 .mainContent .phone01 img ',{stagger:0.1, y:300,opacity:0})
+yeon_18.from('.section18 .back > div ',{x:-300,opacity:0})
+yeon_18.from('.section18 .mainContent .phone02 img ',{stagger:0.2, y:300,opacity:0})
+// yeon_18.from('.section18 .back > div ',{x:300,opacity:0})
+
+ScrollTrigger.create({
+  trigger: '.section18',
+  start: 'top 80%',
+  end: 'bottom bottom',
+  animation: yeon_18,
+  // markers:true,
+  scrub: true,
+})
+
+// 세로로 원이 사라락
+ScrollTrigger.create({
+  trigger: '.section18',
+  start: 'top center',
+  // end: 'bottom bottom',
+  animation: gsap.to('.section18 .circle_back img',{height:1317},'+=2'), 
+  toggleActions: 'restart reverse restart reverse',
+  // pin: false,
+  // pinSpacing: false,
+  // markers: true,
+  scrub: true,
+})
+
+
+
+
+const yeon_19 = gsap.timeline();
+yeon_19.from('.section19 .title img ',{y:300,opacity:0})
+yeon_19.from('.section19 .inner .leftContent img ',{y:300,opacity:0})
+yeon_19.from('.section19 .inner .rightContent .card01 img ',{ scale:0,ease:"back.inOut(2)"})
+yeon_19.from('.section19 .inner .rightContent .card02 img ',{scale:0,ease:"back.inOut(2)"})
+yeon_19.from('.section19 .inner .rightContent .card03 img ',{scale:0,ease:"back.inOut(2)"})
+yeon_19.from('.section19 .inner .rightContent .card04 img ',{scale:0,ease:"back.inOut(2)"})
+// 칩 위에서 아래로 떨어지는거
+yeon_19.from('.section19 .inner .chips01 img ',{y:-300,opacity:0})
+yeon_19.from('.section19 .inner .chips02 img ',{y:-300,opacity:0})
+
+
+// duration:1,stagger:0.2,scale:1
+
+ScrollTrigger.create({
+  trigger: '.section19',
+  start: 'top 70%',
+  // end: 'bottom bottom', 끝나는걸 좀더 빠르지만? 느리게..
+  animation: yeon_19,
+  // markers:true,
+  scrub: true,
+})
+
+
+
+
+const yeon_20 = gsap.timeline();
+yeon_20.from('.section20 .title img ',{y:300,opacity:0})
+yeon_20.from('.section20 .phone img ',{y:300,opacity:0})
+yeon_20.from('.section20 .deco01 img ',{x:-300,opacity:0})
+yeon_20.from('.section20 .deco02 img ',{x:-300,opacity:0})
+yeon_20.from('.section20 .deco03 img ',{x:300,opacity:0})
+yeon_20.from('.section20 .deco04 img ',{x:300,opacity:0})
+
+
+ScrollTrigger.create({
+  trigger: '.section20',
+  start: 'top 70%',
+  end: 'bottom bottom',
+  animation: yeon_20,
+  markers:true,
+  scrub: true,
+})
+
+
+
+
 
 
 

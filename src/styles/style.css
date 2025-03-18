@@ -874,7 +874,7 @@ p {
           position: absolute;
           left: 50%;
           top: 50%;
-          translate: -50% -50%;
+          translate: -50%,-50%;
 
           
         }
@@ -890,7 +890,8 @@ p {
           position: absolute;
           left: 50%;
           top: 50%;
-          translate: -50% -50%;
+          translate: -50%,-50%;
+          
         }
       }
 
@@ -913,13 +914,18 @@ p {
   
 
 .section07{
-  height: initial;
+  height: 1000px;
   background-color: #020202;
   text-align: center;
+  position: relative;
 
 
   .background{
-    width: 100vw;
+    
+    /* overflow: hidden;
+    width: 0; */
+    /* 1920 */
+    /* text-align: center; */
   }
 }
 
@@ -1467,6 +1473,7 @@ p {
       }
 
       .PopupCard{
+       
 
 
         .TipLine{
@@ -1858,6 +1865,12 @@ p {
     /* z-index: ; */
     text-align: center;
     margin-top: 150px;
+
+    overflow: hidden;
+    height: 0;
+    /* 1317 */
+
+
   }
   .mainContent{
     
