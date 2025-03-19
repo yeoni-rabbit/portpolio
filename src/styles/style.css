@@ -24,10 +24,14 @@ p {
 }
 
 @keyframes dongdong_once {
-  from{
+  0%{
+    transform:translateY(0)
+  }
+  50%{
+    
     transform:translateY(-10%)
   }
-  to{
+  100%{
     transform:translateY(0)
   }
 }
@@ -962,9 +966,10 @@ p {
 
 
   .background{
-    
-    /* overflow: hidden;
-    width: 0; */
+    overflow: hidden;
+    width: 0;
+    /* 
+     */
     /* 1920 */
     /* text-align: center; */
   }
@@ -1792,7 +1797,13 @@ p {
 .phone{
   position: relative;
   .phones{
+    overflow: hidden;
     text-align: center;
+
+    img{
+      position: relative;
+      top: 90px;
+    }
     
   }
 
@@ -2131,6 +2142,10 @@ p {
   }
 
 
+  #element{
+    font-size: 10rem;
+    /* font-family: ; */
+  }
 
 
 

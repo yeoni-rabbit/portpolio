@@ -1,5 +1,6 @@
 import "../lib/smooth";
 import "./styles/style.css";
+import Typed from 'typed.js';
 import { markers } from "../lib/smooth";
 
 import { gsap } from "gsap";
@@ -257,10 +258,10 @@ ScrollTrigger.create({
 
 
 ScrollTrigger.create({
-  trigger: '.section06',
-  start:'80% 60%',
-  // end: '60% center',
-  animation: gsap.to('.section07 .background img',{width:1920},'+=2'),
+  trigger: '.section07',
+  start:'top center',
+  end: 'bottom center',
+  animation: gsap.to('.section07 .background',{width:'100vw'}),
   // toggleActions: 'restart reverse restart reverse',
   // pin: false,
   // pinSpacing: false,
@@ -509,6 +510,7 @@ yeon_18.from('.section18 .title img ',{y:300,opacity:0})
 yeon_18.from('.section18 .mainContent .phone01 img ',{stagger:0.1, y:300,opacity:0})
 yeon_18.from('.section18 .back > div ',{x:-300,opacity:0})
 yeon_18.from('.section18 .mainContent .phone02 img ',{stagger:0.2, y:300,opacity:0})
+yeon_18.to('.section18 .circle_back ',{height:800})
 // yeon_18.from('.section18 .back > div ',{x:300,opacity:0})
 
 ScrollTrigger.create({
@@ -520,25 +522,26 @@ ScrollTrigger.create({
   scrub: true,
 })
 
-// 세로로 원이 사라락
-ScrollTrigger.create({
-  trigger: '.section18',
-  start: 'top center',
-  // end: 'bottom bottom',
-  animation: gsap.to('.section18 .circle_back img',{height:1317},'+=2'), 
-  toggleActions: 'restart reverse restart reverse',
-  // pin: false,
-  // pinSpacing: false,
-  // markers: true,
-  scrub: true,
-})
+// // 세로로 원이 사라락
+// ScrollTrigger.create({
+//   trigger: '.section18',
+//   start: 'top center',
+//   // end: 'bottom bottom',
+//   animation: gsap.to('.section18 .circle_back img',{height:1317},'+=2'), 
+//   toggleActions: 'restart reverse restart reverse',
+//   // pin: false,
+//   // pinSpacing: false,
+//   // markers: true,
+//   scrub: true,
+// })
 
 
 
 
 const yeon_19 = gsap.timeline();
-yeon_19.from('.section19 .title img ',{y:300,opacity:0})
-yeon_19.from('.section19 .inner .leftContent img ',{y:300,opacity:0})
+yeon_19.from('.section19 .title > img ',{y:300,opacity:0})
+yeon_19.from('.section19 .inner .leftContent > img ',{y:300,opacity:0})
+yeon_19.from('.section19 .inner .leftContent .chips01 img ',{y:-100,opacity:0})
 yeon_19.from('.section19 .inner .rightContent .card01 img ',{ scale:0,ease:"back.inOut(2)"})
 yeon_19.from('.section19 .inner .rightContent .card02 img ',{scale:0,ease:"back.inOut(2)"})
 yeon_19.from('.section19 .inner .rightContent .card03 img ',{scale:0,ease:"back.inOut(2)"})
@@ -576,6 +579,21 @@ ScrollTrigger.create({
   start: 'top 70%',
   end: 'bottom bottom',
   animation: yeon_20,
+  // markers:true,
+  scrub: true,
+})
+
+ScrollTrigger.create({
+  trigger: '.section21',
+  start: 'top top',
+  end: 'bottom bottom',
+  // animation: yeon_20,
+  onEnter(){
+    var typed = new Typed('#element', {
+      strings: ['THANK YOU'],
+      typeSpeed: 50,
+    })
+  },
   // markers:true,
   scrub: true,
 })
