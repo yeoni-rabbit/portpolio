@@ -22,6 +22,15 @@ p {
     transform:translateY(5)
   }
 }
+
+@keyframes dongdong_once {
+  from{
+    transform:translateY(-10%)
+  }
+  to{
+    transform:translateY(0)
+  }
+}
 /* @keyframes blink {
   from{
     transform:opacity(0%)
@@ -98,13 +107,45 @@ p {
   .title {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     translate: -50% -50%;
 
     .titleGroup {
       display: flex;
       justify-content: center;
       margin-bottom: 60px;
+
+
+
+
+      .title01{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.1s;
+      }
+      .title02{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.2s;
+      }
+      .title03{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.3s;
+      }
+      .title04{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.4s;
+      }
+      .title05{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.5s;
+      }
+      .title06{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.6s;
+      }
+      .title07{
+        animation: dongdong_once 0.5s;
+        animation-delay: 0.7s;}
+
     }
 
   }
@@ -194,6 +235,7 @@ p {
   height: 2120px;
   position: relative;
   background-color: #2f2d33;
+  z-index: -99;
 
   .overview {
     width: 100vw;
@@ -371,9 +413,9 @@ p {
 
         .deco03{
           position: absolute;
-          left: 50%;
-          top: 30%;
-          translate: -50% -50%;
+          left: 40%;
+          top: 25%;
+          /* translate: -50% -50%; */
         }
       }
 
@@ -598,8 +640,7 @@ p {
     padding-bottom: 200px;
     
     .titleGroup{
-      /* background-color: red; */
-      padding-top: 120px;
+      padding-top: 160px;
       padding-bottom: 60px;
 
      
@@ -996,6 +1037,7 @@ p {
 .section09{
   /* background-color: orange; */
   height: initial;
+  height: 2500px;
   position: relative;
   z-index:99;
   
@@ -1004,12 +1046,14 @@ p {
 
   .background{
     width: 100vw;
+  
     
     
     .patton{
     
      .back{
       width: 100vw;
+      height: 2500px;
       
      }
     }
@@ -1057,12 +1101,14 @@ p {
 .section10{
   height: initial;
   position: relative;
+  background-color: #1A1B1B;
 
   
   
   .background_section10{
     .back{
       width: 100vw;
+      height: 1800px;
      
     }
   }
@@ -1129,12 +1175,12 @@ p {
         .deco01{
           position: absolute;
           left: 20%;
-          top: 20%;
+          top: 24%;
         }
         .deco02{
           position: absolute;
-          right: 30%;
-          bottom: 25%;
+          right: 28%;
+          bottom: 17%;
         }
 
         .splah_left{
@@ -1146,7 +1192,7 @@ p {
        
           position: absolute;
           left: 25%;
-          top: 18%;
+          top: 22%;
           animation: dongdong_light 1.3s infinite alternate;
 
 
@@ -1181,7 +1227,7 @@ p {
         
           position: absolute;
           right: 25%;
-          bottom: 25%;
+          bottom: 15%;
           animation: dongdong_light 1.3s infinite alternate;
           
           .faceDeco02{
@@ -1297,6 +1343,8 @@ p {
       left: 50%;
       top: 50%;
       translate: -50% -50%;
+      /* overflow: hidden;
+      width: 0; */
       
 
     }
@@ -1454,7 +1502,7 @@ p {
       margin-top: 130px;
       margin-left: 30%;
       position: relative;
-      overflow: hidden;
+
       
         
       }
@@ -1494,7 +1542,7 @@ p {
       }
       .p_01{
         position: absolute;
-        right:12%;
+        right:10%;
         top: 25%;
       
       }
@@ -1550,14 +1598,14 @@ p {
     }
     .phone02{
       position: absolute;
-      left: 36.5%;
+      left: 36%;
       top: 27%;
       
     }
     .phone03{
       position: absolute;
       right: -10%;
-      bottom: 4%;
+      bottom: 1%;
     }
     .phone04{
       position: absolute;
@@ -1568,7 +1616,7 @@ p {
 
     .deco{
       position: absolute;
-      left: 21%;
+      left: 28%;
       bottom: -1%;
       
     }
@@ -1738,6 +1786,7 @@ p {
   height: initial;
   padding-top: 250px;
   position: relative;
+  z-index: 99;
  
   
 .phone{
